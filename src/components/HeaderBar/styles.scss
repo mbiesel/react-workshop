@@ -1,0 +1,25 @@
+.HeaderBar {
+  padding: 20px 10px;
+}
+
+input {
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+}
+
+.HeaderBar__button {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #4eb5f1;
+  text-align: center;
+  border: none;
+}
