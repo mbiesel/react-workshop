@@ -11,16 +11,9 @@ const className = 'LaunchList';
 
 const LaunchList = ({ data }) => {
     console.log('rerender: LaunchList');
-    const { filter, handleIdChange } = useAppContext();
-
-    const [ filteredData, setFilter ] = useFilterData(data.launches, 'mission_name');
-
-    useEffect(() => {
-        setFilter(filter);
-    }, [ filter, setFilter ]);
 
     const renderLaunchList = () => {
-        return filteredData?.map((launch, i) => {
+        return data?.launches?.map((launch, i) => {
             return (
                 <li
                     key={i}
